@@ -13,7 +13,7 @@ const MarathonDetails = () => {
     const [toastMessage, setToastMessage] = useState('');
 
     useEffect(() => {
-        // Fetch details of the selected marathon
+       
         axios.get(`${backendUrl}/allMarathon/${id}`,{withCredentials:true})
             .then((response) => {
                 setMarathon(response.data);
