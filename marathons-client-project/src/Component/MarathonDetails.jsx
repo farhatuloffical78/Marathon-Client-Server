@@ -34,7 +34,7 @@ const MarathonDetails = () => {
         } else {
             
             setToastMessage('Registration is currently closed.');
-            setTimeout(() => setToastMessage(''), 3000); // Clear the toast after 3 seconds
+            setTimeout(() => setToastMessage(''), 3000); // 
         }
     };
 
@@ -83,7 +83,7 @@ const MarathonDetails = () => {
                 <h2 className="text-xl font-semibold mb-4">Countdown to Marathon Start</h2>
                 <CountdownCircleTimer
                     isPlaying
-                    duration={remainingTime / 1000} // Convert remaining time to seconds
+                    duration={remainingTime / 1000} 
                     colors="#4e9af1"
                     strokeWidth={6}
                     size={150}
