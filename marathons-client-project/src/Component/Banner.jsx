@@ -32,8 +32,8 @@ const Banner = () => {
         modules={[Pagination, Autoplay]} 
         pagination={{ clickable: true }}
         autoplay={{
-          delay: 3000, // Time between slide transitions in milliseconds
-          disableOnInteraction: false, // Keep autoplay running even after user interaction
+          delay: 3000, 
+          disableOnInteraction: false, 
         }}
         loop={true}
         className="h-full"
@@ -44,7 +44,7 @@ const Banner = () => {
               className="relative w-full h-full bg-cover bg-center"
               style={{
                 backgroundImage: `url(${slide.image})`,
-                height: "80vh", // Ensures consistent height across slides
+                height: "80vh", 
               }}
             >
               {/* Background Overlay */}
