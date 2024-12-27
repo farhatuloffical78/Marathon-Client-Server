@@ -16,15 +16,15 @@ const MarathonRegister = () => {
     additionalInfo: '',
   });
   const backendUrl = import.meta.env.VITE_BACKEND_URL;
-  const navigate = useNavigate(); // Redirect after successful registration
+  const navigate = useNavigate();
   const [toastMessage, setToastMessage] = useState('');
 
   useEffect(() => {
-    // Fetch the marathon details
+  
     axios
       .get(`${backendUrl}/allMarathon/${id}`,{withCredentials:true})
       .then((response) => {
-        console.log('Fetched marathon:', response.data);  // Log to check
+        console.log('Fetched marathon:', response.data); 
         setMarathon(response.data);
       })
       .catch((error) => {
