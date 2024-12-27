@@ -6,10 +6,10 @@ import { CountdownCircleTimer } from 'react-countdown-circle-timer';
 import { Helmet } from 'react-helmet';
 
 const MarathonDetails = () => {
-    const { id } = useParams(); // Extract marathon ID from the route
+    const { id } = useParams(); 
     const [marathon, setMarathon] = useState(null);
     const backendUrl = import.meta.env.VITE_BACKEND_URL;
-    const navigate = useNavigate(); // For redirecting to the registration page
+    const navigate = useNavigate(); 
     const [toastMessage, setToastMessage] = useState('');
 
     useEffect(() => {
