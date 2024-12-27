@@ -1,9 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules"; // Import Autoplay
+import { Pagination, Autoplay } from "swiper/modules"; 
 import "swiper/css";
 import "swiper/css/pagination";
-import bannerImage1 from "../assets/bannerimg.jpg"; // Replace with your images
+import bannerImage1 from "../assets/bannerimg.jpg"; 
 import bannerImage2 from "../assets/bannerimg2.jpg";
 import bannerImage3 from "../assets/bannerimg3.jpg";
 
@@ -29,7 +29,7 @@ const Banner = () => {
   return (
     <section className="relative w-full h-[80vh]">
       <Swiper
-        modules={[Pagination, Autoplay]} // Include Autoplay module
+        modules={[Pagination, Autoplay]} 
         pagination={{ clickable: true }}
         autoplay={{
           delay: 3000, // Time between slide transitions in milliseconds
