@@ -40,10 +40,10 @@ const MarathonRegister = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    // Ensure marathon title is available before submitting
+   
     if (!marathon || !marathon.title) {
       setToastMessage('Marathon title is missing.');
-      return; // Prevent submission if title is missing
+      return;
     }
 
     const registrationData = {
