@@ -6,8 +6,8 @@ import Loading from './Loading';
 import { Helmet } from 'react-helmet';
 
 const MarathonRegister = () => {
-  const { id } = useParams(); // Extract marathon ID from the route
-  const { currentUser } = useContext(AuthenticationContext); // Fetch the logged-in user's info
+  const { id } = useParams(); 
+  const { currentUser } = useContext(AuthenticationContext); 
   const [marathon, setMarathon] = useState(null);
   const [formData, setFormData] = useState({
     firstName: '',
