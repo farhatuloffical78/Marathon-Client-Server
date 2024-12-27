@@ -29,10 +29,10 @@ const MarathonDetails = () => {
         const endDate = new Date(marathon.endRegistrationDate);
 
         if (currentDate >= startDate && currentDate <= endDate) {
-            // Redirect to the registration page
+         
             navigate(`/register/${marathon._id}`);
         } else {
-            // Show toast error message
+            
             setToastMessage('Registration is currently closed.');
             setTimeout(() => setToastMessage(''), 3000); // Clear the toast after 3 seconds
         }
