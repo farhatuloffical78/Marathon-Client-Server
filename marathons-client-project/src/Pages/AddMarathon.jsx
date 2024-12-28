@@ -16,13 +16,13 @@ const AddMarathon = () => {
     title: '',
     startRegistrationDate: null, 
     endRegistrationDate: null, 
-    startDate: null, // Initially set to null
+    startDate: null, 
     location: '',
     runningDistance: '',
     description: '',
     image: '',
-    totalRegistrationCount: 0, // Initial value
-    createdAt: new Date(), // Set to current date
+    totalRegistrationCount: 0, 
+    createdAt: new Date(), 
   });
   
 
