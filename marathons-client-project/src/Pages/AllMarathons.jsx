@@ -11,7 +11,7 @@ const AllMarathons = () => {
     const axiosSecure = useSecureAxios();
 
     useEffect(() => {
-        // Fetch marathon data with sorting using the secure Axios instance
+        
         axiosSecure
             .get(`/allMarathon?sortOrder=${sortOrder}`)
             .then((response) => {
@@ -20,7 +20,7 @@ const AllMarathons = () => {
             .catch((error) => {
                 console.error('Error fetching marathons:', error);
             });
-    }, [sortOrder, axiosSecure]); // Dependencies include secure Axios and sortOrder
+    }, [sortOrder, axiosSecure]); 
 
     const handleSeeDetails = (marathonId) => {
         navigate(`/marathon/${marathonId}`);
