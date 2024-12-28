@@ -26,7 +26,7 @@ const AddMarathon = () => {
   });
   
 
-  // Handle form input changes
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -49,7 +49,7 @@ const AddMarathon = () => {
 
     const updatedFormData = {
       ...formData,
-      createdAt: new Date().toISOString(), // Set createdAt to the current timestamp
+      createdAt: new Date().toISOString(), 
     };
 
     try {
