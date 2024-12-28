@@ -9,7 +9,7 @@ import { Helmet } from 'react-helmet';
 
 
 const AddMarathon = () => {
-  const { currentUser } = useContext(AuthenticationContext); // Fetch the logged-in user's info
+  const { currentUser } = useContext(AuthenticationContext); 
 
   const [formData, setFormData] = useState({
     email: currentUser?.email || '', // Pre-fill with logged-in user's email
