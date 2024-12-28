@@ -11,7 +11,7 @@ import AddMarathon from "../Pages/AddMarathon";
 import Dashboard from "../Pages/Dashbroad";
 import MyMarathon from "../Pages/MyMarathon";
 import ApplyList from "../Pages/ApplyList";
-import Dashbroadimg from "../Component/Dashbroadimg";  // Ensure this is imported correctly
+import Dashbroadimg from "../Component/Dashbroadimg"; 
 import MarathonDetails from "../Component/MarathonDetails";
 import MarathonRegistration from "../Component/MarathonRegistration";
 

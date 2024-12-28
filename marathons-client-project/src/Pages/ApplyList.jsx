@@ -20,9 +20,7 @@ const ApplyList = () => {
     additionalInfo: '',
   });
 
-  const axiosInstance = useSecureAxios(); // Using the axiosInstance from the custom hook
-
-  // Fetch registrations using axios
+  const axiosInstance = useSecureAxios(); 
   useEffect(() => {
     const fetchRegistrations = async () => {
       try {
@@ -39,18 +37,18 @@ const ApplyList = () => {
     fetchRegistrations();
   }, [currentUserEmail, searchQuery, axiosInstance]);
 
-  // Handle input change for the search query
+
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
   };
 
-  // Handle update form input changes
+  
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  // Handle updating the registration using axios
+  
   const handleUpdate = async (e) => {
     e.preventDefault();
     try {
@@ -67,9 +65,9 @@ const ApplyList = () => {
     }
   };
 
-  // Handle deleting the registration using axios
+ 
   const handleDelete = async (registrationId) => {
-    // Display the SweetAlert confirmation dialog
+    
     Swal.fire({
       title: 'Are you sure?',
       text: 'Do you want to delete this registration? This action cannot be undone!',
@@ -85,7 +83,6 @@ const ApplyList = () => {
             data: { registrationId },
           });
           toast.success('Registration deleted successfully');
-          // Refresh the list after deletion
           const { data } = await axiosInstance.get(`${BACKEND_URL}/regMarathon/user/${currentUserEmail}`);
           setRegistrations(data);
         } catch (error) {
@@ -96,7 +93,7 @@ const ApplyList = () => {
   };
   
 
-  // Handle showing the update modal
+  
   const showUpdateModal = (registration) => {
     setCurrentRegistration(registration);
     setFormData({
@@ -196,7 +193,7 @@ const ApplyList = () => {
           <p className="border p-2 w-full">{new Date(currentRegistration.startDate).toLocaleDateString()}</p>
         </div>
 
-        {/* Form Fields for First Name, Last Name, etc. */}
+     
         <div className="mb-4">
           <label htmlFor="firstName" className="block">First Name</label>
           <input
