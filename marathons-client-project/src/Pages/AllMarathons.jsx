@@ -6,9 +6,9 @@ import useSecureAxios from '../Hook/useSecureAxios';
 
 const AllMarathons = () => {
     const [marathons, setMarathons] = useState([]);
-    const [sortOrder, setSortOrder] = useState('asc'); // Default to 'asc' for ascending order
+    const [sortOrder, setSortOrder] = useState('asc'); 
     const navigate = useNavigate();
-    const axiosSecure = useSecureAxios(); // Secure Axios instance
+    const axiosSecure = useSecureAxios();
 
     useEffect(() => {
         // Fetch marathon data with sorting using the secure Axios instance
