@@ -12,7 +12,7 @@ const AddMarathon = () => {
   const { currentUser } = useContext(AuthenticationContext); 
 
   const [formData, setFormData] = useState({
-    email: currentUser?.email || '', // Pre-fill with logged-in user's email
+    email: currentUser?.email || '', 
     title: '',
     startRegistrationDate: null, // Initially set to null
     endRegistrationDate: null, // Initially set to null
