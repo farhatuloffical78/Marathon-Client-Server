@@ -14,8 +14,8 @@ const AddMarathon = () => {
   const [formData, setFormData] = useState({
     email: currentUser?.email || '', 
     title: '',
-    startRegistrationDate: null, // Initially set to null
-    endRegistrationDate: null, // Initially set to null
+    startRegistrationDate: null, 
+    endRegistrationDate: null, 
     startDate: null, // Initially set to null
     location: '',
     runningDistance: '',
