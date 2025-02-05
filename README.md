@@ -40,7 +40,7 @@ Available for real-time use: [RaceFlow client Live Demo](https://marathon-b3537.
 - **astro-age**: `npm install astro-age`
 
 ## How to Run Locally
-1. Clone the repository: git clone https://github.com/farhatuloffical78/Marathon-Client-Server/tree/main?tab=readme-ov-file
+1. Clone the repository: https://github.com/farhatuloffical78/Marathon-Client-Server
 2. Navigate to the project directory: cd marathons-client-project
 3. Install the necessary dependencies:npm install
 4. Set up the environment variables:Add your Firebase and MongoDB credentials.
