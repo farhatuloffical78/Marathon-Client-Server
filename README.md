@@ -43,4 +43,7 @@ Available for real-time use: [RaceFlow client Live Demo](https://marathon-b3537.
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/raceflow.git
-2. 
+2. Navigate to the project directory: cd marathons-client-project
+3. Install the necessary dependencies:npm install
+4. Set up the environment variables:Add your Firebase and MongoDB credentials.
+5. Start the project: npm run dev
